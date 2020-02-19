@@ -31,13 +31,12 @@ namespace MusicScales
             string n = Console.ReadLine();
             Console.WriteLine("The scales is : ");
             int position = Array.IndexOf(notes, n);
-            for(int i = 0;i<7;i++)
+            for(int i = 0;i<seq.Length;i++)
             {
                 Console.Write(notes[position%size]+" ");
                 position += seq[i];
             }
             Console.ReadLine();
-
         }
     }
 }
